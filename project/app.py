@@ -66,7 +66,7 @@ for threshold in range(1, 256):
 # Apply the best threshold
 
 # Apply the best threshold
-_, thresholded_image = cv.threshold(grayimg, best_threshold, 255, cv.THRESH_OTSU)
+_, thresholded_image = cv.threshold(grayimg, best_threshold, 255, cv.THRESH_BINARY + cv.THRESH_OTSU)
 
 
 # Display the original and thresholded images
